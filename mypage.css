@@ -1,0 +1,47 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ink Free', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 100%
+  margin: 0 auto;
+
+}
+.header-menu {
+  display:flex;
+
+}
+.header-menu a {
+	display: block;
+	border-radius: 4px;
+	padding: 12px 24px;
+  color:black;
+}
+.header-menu a:hover {
+	background-color: #fac719;
+  color:white
+}
+
+.top-message h2 {
+  font-size:50px;
+  text-align: center;
+}
