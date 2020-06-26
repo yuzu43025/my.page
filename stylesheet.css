@@ -99,9 +99,6 @@ footer p {
   line-height: 50px;
 }
 @media (max-width:670px){
-  body {
-    font-family: 'John Handy LET Plain';
-  }
   .header-menu {
     justify-content: space-between;
     margin:0 30px 20px 30px;
