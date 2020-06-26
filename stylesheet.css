@@ -99,6 +99,9 @@ footer p {
   line-height: 50px;
 }
 @media (max-width:670px){
+  body {
+    font-family: 'Ink Free';
+  }
   .header-menu {
     justify-content: space-between;
     margin:0 30px 20px 30px;
@@ -113,12 +116,12 @@ footer p {
   h2{font-size: 20px;}
 
   .aboutme P {
-  width: 80%;
+  width: 59%;
   margin: 0 auto;
   padding-bottom: 10px;
 
   }
-  br {display: none;}
+  .pcbr {display: none;}
   .work img {
     width: 80%;
   }
