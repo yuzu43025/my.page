@@ -61,12 +61,13 @@ a {
 .aboutme{
   background-color: rgb(214, 214, 211)
 }
-.aboutme h2 {
+.subtitle {
   display: inline-block;
   border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
   margin: 2rem 0 1rem 0;
-
+  text-align: center;
 }
+
 .aboutme img {
     border-radius: 50%;
     width:  130px;
@@ -79,12 +80,6 @@ a {
 .aboutme p {
   font-size: 12px;
   padding: 1rem 0 2.5rem 0;
-}
-.work h2 {
-  display: block;
-  border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
-  margin: 2rem 0 1rem 0;
-  position: absolute;
 }
 
 .work img {
