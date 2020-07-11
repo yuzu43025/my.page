@@ -24,7 +24,12 @@ a {
   text-align:center;
   width: 100%
 }
-
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
 .header-menu {
   display:flex;
 }
@@ -43,22 +48,24 @@ a {
 .top-message h2 {
   font-size:50px;
   text-align: center;
+  margin: 2rem;
 }
 
 .top-image {
   background-image: url(https://github.com/yuzu43025/my.page/blob/master/top-image.jpg?raw=true);
   margin-top: 10px;
-  height:300px;
+  height:25rem;
   background-size: cover;
-  text-align: center;
-
 }
+
 .aboutme{
   background-color: rgb(214, 214, 211)
 }
 .aboutme h2 {
   display: inline-block;
-  border-bottom: 2px dashed rgba(184, 48, 235, 0.73)
+  border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
+  margin: 2rem 0 1rem 0;
+
 }
 .aboutme img {
     border-radius: 50%;
@@ -71,19 +78,21 @@ a {
 }
 .aboutme p {
   font-size: 12px;
-  padding-bottom: 30px;
+  padding: 1rem 0 2.5rem 0;
 }
 .work h2 {
-  display: inline-block;
-  border-bottom: 2px dashed rgba(184, 48, 235, 0.73)
-
-}
-.work img {
-  width: 25%;
   display: block;
+  border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
+  margin: 2rem 0 1rem 0;
+  position: absolute;
+}
+
+.work img {
+  width: 221px;
+  height: 174px;
   padding: 10px 0;
   margin: 0 auto;
-
+  padding-bottom: 2.5rem;
 }
 .work img:hover {
 	opacity: 0.5 ;
@@ -98,11 +107,12 @@ footer p {
   text-align: center;
   line-height: 50px;
 }
+
 @media (max-width:670px){
   .header-menu {
     justify-content: space-between;
     margin:0 30px 20px 30px;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .top-message h2 {
     font-size:30px;
@@ -115,13 +125,10 @@ footer p {
   .aboutme P {
   width: 59%;
   margin: 0 auto;
-  padding-bottom: 10px;
 
   }
   .pcbr {display: none;}
-  .work img {
-    width: 80%;
-  }
+  .work img 0.9  }
   footer p {
     font-size: 12px;
   }
