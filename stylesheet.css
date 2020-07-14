@@ -104,7 +104,11 @@ footer p {
   text-align: center;
   line-height: 50px;
 }
-
+@media (min-width:1000px){
+.flex {
+  padding: 0 15rem;
+}
+}
 @media (max-width:670px){
   .header-menu {
     justify-content: space-between;
@@ -122,10 +126,8 @@ footer p {
   .aboutme P {
   width: 59%;
   margin: 0 auto;
-
   }
   .pcbr {display: none;}
-  .work img 0.9  }
   footer p {
     font-size: 12px;
   }
