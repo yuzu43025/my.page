@@ -1,134 +1,149 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
-}
-
-body {
+ }
+ 
+ body {
   font-family: 'Ink Free', 'BIZ UD ゴシック';
-}
-
-li {
+ }
+ 
+ li {
   list-style: none;
-}
-
-a {
+ }
+ 
+ a {
   text-decoration: none;
-}
-
-*{
+ }
+ 
+ * {
   box-sizing: border-box;
-}
-.container {
-  text-align:center;
-  width: 100%
-}
-.flex {
+ }
+ 
+ .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-}
-.header-menu {
-  display:flex;
-}
-
-.header-menu a {
-	display: block;
-	border-radius: 4px;
-	padding: 12px 24px;
-  color:black;
-
-}
-.header-menu a:hover {
-	background-color: #fac719;
-  color:white
-}
-
-.top-message h2 {
-  font-size:50px;
+ }
+ 
+ .header-menu {
+  display: flex;
+ }
+ 
+ .header-menu a {
+  display: block;
+  border-radius: 4px;
+  padding: 12px 24px;
+  color: black;
+ }
+ 
+ .header-menu a:hover {
+  background-color: #fac719;
+  color: white
+ }
+ 
+ .top-message h2 {
+  font-size: 50px;
   text-align: center;
   margin: 2rem;
-}
-
-.top-image {
+ }
+ 
+ .top-image {
   background-image: url(https://github.com/yuzu43025/my.page/blob/master/top-image.jpg?raw=true);
   margin-top: 10px;
-  height:25rem;
+  height: 25rem;
   background-size: cover;
-}
-
-.aboutme{
+ }
+ 
+ .aboutme {
   background-color: rgb(214, 214, 211)
-}
-.subtitle {
+ }
+ 
+ .subtitle {
   display: inline-block;
   border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
   margin: 2rem 0 1rem 0;
-}
-.work {
- text-align: center;
-}
-.aboutme img {
-    border-radius: 50%;
-    width:  130px;
-    height: 130px;
-    margin: 10px auto;
-    display: block;
-    text-align:center;
-
-}
-.aboutme p {
+ }
+ 
+ .work {
+  text-align: center;
+ }
+ 
+ .aboutme img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+ }
+ 
+ .aboutme p {
   font-size: 12px;
   padding: 1rem 0 2.5rem 0;
-}
-
-.work img {
-  width: 221px;
-  height: 174px;
-  padding: 10px 0;
-  margin: 0 auto;
-  padding-bottom: 2.5rem;
-}
-.work img:hover {
-	opacity: 0.5 ;
-}
-
-footer {
-  height: 50px;
+ }
+  
+ .work img:hover {
+  opacity: 0.5;
+ }
+ 
+ footer {
   border-top: 1px dashed rgba(181, 180, 178, 0.9)
-
-}
-footer p {
+ }
+ 
+ footer p {
   text-align: center;
-  line-height: 50px;
+  font-size: 12px;
+  padding: 10px 0;
+} 
+ @media (min-width:1000px) {
+  .container {
+   width: 1000px;
+   margin: 0 auto;
+   text-align: center;
+  }
+  .work .container {
+    padding: 20px 30px 50px 30px;
+  }
+  .work img {
+    width: 400px;
+    margin: 0 auto;
 }
-@media (min-width:1000px){
-.flex {
-  padding: 0 15rem;
-}
-}
-@media (max-width:670px){
+ }
+ 
+ @media (max-width:670px) {
+  .container {
+   text-align: center;
+   width: 100%
+  }
   .header-menu {
-    justify-content: space-between;
-    margin:0 30px 20px 30px;
-    font-size: 0.9rem;
+   justify-content: space-between;
+   margin: 0 30px 20px 30px;
+   font-size: 0.9rem;
   }
   .top-message h2 {
-    font-size:30px;
+   font-size: 30px;
   }
   .top-image {
-    height: 150px;
+   height: 150px;
   }
-  h2{font-size: 20px;}
-
+  h2 {
+   font-size: 20px;
+  }
   .aboutme P {
-  width: 59%;
-  margin: 0 auto;
+   width: 59%;
+   margin: 0 auto;
   }
-  .pcbr {display: none;}
+  .work img {
+   width: 313px;
+   padding: 10px 0;
+   margin: 0 auto;
+   padding-bottom: 1.5rem;
+  }
+  .pcbr {
+   display: none;
+  }
   footer p {
-    font-size: 12px;
+   font-size: 10px;
   }
-}
+ }
