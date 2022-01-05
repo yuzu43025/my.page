@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>my.page</title>
+  <title>Izumi Miki PORTFOLIO</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 </head>
 <body>
   <header>
     <div class="container">
       <ul class="header-menu">
-        <li><a href="#menu">MENU</a></li>
+        <li><a href="#">MENU</a></li>
         <li><a href="#aboutme">ABOUT ME</a></li>
         <li><a href="#work">WORK</a></li>
       </ul>
@@ -19,21 +20,23 @@
   <div class="top-message">
     <h2><a id="menu">PORTFOLIO</a></h2>
   </div>
-  <div class="top-image"> </div>
-  <div class="aboutme">
+  <div class="top-image"></div>
+  <div id="aboutme" class="aboutme">
     <div class="container">
-      <h2><a id="aboutme" class="subtitle">ABOUT ME</a></h2> <img src="https://github.com/yuzu43025/my.page/blob/master/IMG_5897%20(1).JPG?raw=true">
-      <p>１９９４年５月１６日生まれ。<br class="pcbr">静岡県立大学国際関係学部を卒業後、 カナダ・ビクトリアにて留学エージェントに就職。<br class="pcbr"> その後東京支店への転勤・転職を経て、現在は日本で駆け出しフロントエンジニア精進中。<br>趣味は編み物、美術館・博物館巡り。</p>
+      <h2 class="subtitle">ABOUT ME</h2> <img src="img/logo.JPG">
+      <p>１９９４年５月１６日生まれ。静岡県立大学国際関係学部を卒業後、 カナダ・ビクトリアにて留学エージェントに就職。その後東京支店への転勤・転職を経て、現在は日本でフロントエンジニア精進中。趣味は編み物、美術館・博物館巡り。</p>
     </div>
   </div>
-  <div class="work">
-    <h2><a id="work" class="subtitle">WORK</a></h2>
-    <div class="container flex"> <a href="https://yuzu43025.github.io/zumicrochet">
-      <img src="https://github.com/yuzu43025/my.page/blob/master/work-zumicrochet.jpg?raw=true"></a> <a href="https://yuzu43025.github.io/backpack-lp/">
-      <img src="https://github.com/yuzu43025/my.page/blob/master/work-backpacklp.png?raw=true"></a> </div>
+  <div id="work" class="work">
+    <h2 class="subtitle">WORK</h2>
+    <ul class="container flex"> 
+      <li><a href="http://izumimiki.lsv.jp/todo/index.html"><img src="img/src01.png"></a>・Vue.jsに挑戦したTODOリストです</li>
+      <li><a href="http://izumimiki.lsv.jp/asia-trip/index.html"><img src="img/scr02.png"></a>・アニメーションやスライダー、モーダル実装をした擬似ランディングページです</li>
+    </ul>
   </div>
   <footer>
     <p>Copyright © <script>document.write(new Date().getFullYear());</script> Izumi Miki. All rights reserved.</p>
   </footer>
+  <script src="js/function.js"></script>
 </body>
 </html>

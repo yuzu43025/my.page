@@ -39,50 +39,59 @@ html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, div {
  
  .header-menu a:hover {
   background-color: #fac719;
+  border-bottom: 2px dashed rgb(192 94 229);
   color: white
  }
  
  .top-message h2 {
   font-size: 50px;
   text-align: center;
-  margin: 2rem;
+  margin: 90px;
  }
  
  .top-image {
-  background-image: url(https://github.com/yuzu43025/my.page/blob/master/top-image.jpg?raw=true);
+  background-image: url(../img/top-image.jpg);
   margin-top: 10px;
   height: 25rem;
   background-size: cover;
  }
  
  .aboutme {
-  background-color: rgb(214, 214, 211)
+  background-color: rgb(214, 214, 211);
+  padding: 90px 0;
  }
  
  .subtitle {
   display: inline-block;
+  font-size: 30px;
   border-bottom: 2px dashed rgba(184, 48, 235, 0.73);
-  margin: 2rem 0 1rem 0;
  }
  
  .work {
   text-align: center;
+ }
+
+ .work ul li {
+   width: 400px;
+   font-size: 12px;
  }
  
  .aboutme img {
   border-radius: 50%;
   width: 130px;
   height: 130px;
-  margin: 10px auto;
+  margin: 50px auto;
   display: block;
   text-align: center;
  }
  
  .aboutme p {
   font-size: 12px;
-  padding: 1rem 0 2.5rem 0;
  }
-  
+.work {
+  padding: 90px 0;
+
+}
  .work img:hover {
   opacity: 0.5;
  }
@@ -96,54 +105,90 @@ html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, div {
   font-size: 12px;
   padding: 10px 0;
 } 
- @media (min-width:1000px) {
+ @media (min-width:769px) {
+  .header-menu {
+    position: fixed;
+    top: 0;
+  }
   .container {
    width: 1000px;
    margin: 0 auto;
    text-align: center;
   }
+  .aboutme p {
+    width: 350px;
+    margin: 0 auto;
+  }
   .work .container {
-    padding: 20px 30px 50px 30px;
+    margin: 80px auto 0;
   }
   .work img {
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 22px;
 }
  }
  
- @media (max-width:670px) {
+ @media (max-width:768px) {
+  html {font-size: 13.3333vw;}
+  body { font-size: .3rem;}
   .container {
    text-align: center;
-   width: 100%
+   width: 100%;
+   padding: 0 .3rem;
   }
   .header-menu {
-   justify-content: space-between;
-   margin: 0 30px 20px 30px;
    font-size: 0.9rem;
   }
+  .header-menu a {
+    padding: 0.3rem 0.2rem;
+    font-size: .15rem;
+  }
   .top-message h2 {
-   font-size: 30px;
+   font-size: .6rem;
+   margin: 0.2rem 0.3rem 0.5rem;
   }
   .top-image {
-   height: 150px;
+   height: 3.5rem;
   }
   h2 {
-   font-size: 20px;
+   font-size: .4rem;
+  }
+  .aboutme {
+    padding: .6rem 0;
+  }
+  .subtitle {
+    margin: 0 0 0.5rem;
   }
   .aboutme P {
    width: 59%;
    margin: 0 auto;
+   padding: 0.5rem 0 0;
+  }
+  .aboutme img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 auto;
+  }
+  .work {
+    padding: .6rem 0;
+  }
+  .work ul li {
+    width: 4rem;
+    font-size: .15rem;
+  }
+  .work ul li + li {
+    margin: .5rem 0 0;
   }
   .work img {
-   width: 313px;
-   padding: 10px 0;
-   margin: 0 auto;
-   padding-bottom: 1.5rem;
+   width: 4rem;
+   padding: 0;
+   margin: 0 auto 0.1rem;
+   padding-bottom: 0;
   }
   .pcbr {
    display: none;
   }
   footer p {
-   font-size: 10px;
+   font-size: .13rem;
   }
  }
